@@ -65,13 +65,19 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'cfehome.urls'
 CORS_URLS_REGEX = r"^/api/.*"
-CORS_ALLOWED_ORIGINS = ["https://Django-Rest-Framework-Tutorial-1.eugenevolkov.repl.co"]
+CORS_ALLOWED_ORIGINS = ["https://django-rest-framework-tutorial-1.eugenevolkov.repl.co"]
+
+CSRF_TRUSTED_ORIGINS=["https://Django-Rest-Framework-Tutorial-1.eugenevolkov.repl.co"]
+
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 if DEBUG:
     CORS_ALLOWED_ORIGINS += [
         'https://Django-Rest-Framework-Tutorial-1.eugenevolkov.repl.co',
         'https://Django-Rest-Framework-Tutorial-1.eugenevolkov.repl.co',
     ]
+
+
 
 TEMPLATES = [
     {
