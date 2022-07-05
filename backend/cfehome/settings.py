@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-cn9t#dfjhxs%_cyenom8%qjkj=m^n(@0z85itbf+9f)o-d_13q
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["django-rest-framework-tutorial-1.eugenevolkov.repl.co"]
 
 
 # Application definition
@@ -65,12 +65,12 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'cfehome.urls'
 CORS_URLS_REGEX = r"^/api/.*"
-CORS_ALLOWED_ORIGINS = []
+CORS_ALLOWED_ORIGINS = ["https://Django-Rest-Framework-Tutorial-1.eugenevolkov.repl.co"]
 
 if DEBUG:
     CORS_ALLOWED_ORIGINS += [
-        'http://localhost:8111',
-        'https://localhost:8111',
+        'https://Django-Rest-Framework-Tutorial-1.eugenevolkov.repl.co',
+        'https://Django-Rest-Framework-Tutorial-1.eugenevolkov.repl.co',
     ]
 
 TEMPLATES = [

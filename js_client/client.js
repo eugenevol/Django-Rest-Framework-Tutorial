@@ -1,7 +1,7 @@
 const contentContainer = document.getElementById('content-container')
 const loginForm = document.getElementById('login-form')
 const searchForm = document.getElementById('search-form')
-const baseEndpoint = "http://localhost:8000/api"
+const baseEndpoint = "https://django-rest-framework-tutorial-1.eugenevolkov.repl.co/"
 if (loginForm) {
     // handle this login form
     loginForm.addEventListener('submit', handleLogin)
